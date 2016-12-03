@@ -1,16 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
-class Layout extends React.Component {
-	render() {
-		return (
-			<div>
-				Here
-			</div>
-		);
-	}
-}
+import Layout from "./components/Layout";
 
 const app = document.getElementById('app');
 
-ReactDOM.render(<Layout/>, app);
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Layout}>
+    </Route>
+  </Router>,
+app);
