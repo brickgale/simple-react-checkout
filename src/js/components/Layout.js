@@ -1,11 +1,13 @@
 import React from "react";
-import { Router, Route, IndexRoute, hashHistory } from "react-router";
+import { Links } from "react-router";
+
+import Header from "./Header";
 
 export default class Layout extends React.Component {
 	render() {
 		return (
 			<div>
-				Here
+				<Header />
 			</div>
 		);
 	}
