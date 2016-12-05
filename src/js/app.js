@@ -4,6 +4,8 @@ import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
 import Layout from "./components/Layout";
 
+require('./app.scss');
+
 const app = document.getElementById('app');
 
 ReactDOM.render(
