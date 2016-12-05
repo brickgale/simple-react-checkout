@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
 	context: __dirname + "/src",
 	devtool: debug ? "inline-sourcemap" : null,
-	entry: "./js/app.js",
+	entry: "./app.js",
 	module: {
 		loaders: [
 			{
@@ -17,8 +17,8 @@ module.exports = {
 				}
 			},
             {
-                test: /\.scss$/,
-                loaders: [ 'style', 'css', 'sass' ]
+                test: /\.scss$/,	
+                loaders: ["style-loader", "css-loader", "sass-loader"]
             }
 		]
 	},

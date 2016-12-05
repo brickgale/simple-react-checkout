@@ -18,7 +18,11 @@
     "react-dom": "^0.14.6",
     "react-router": "^1.0.3",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "css-loader": "^0.26.1",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1"
   },
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot"
@@ -35,11 +39,5 @@
   "bugs": {
     "url": "https://github.com/brickgale/simple-react-checkout/issues"
   },
-  "homepage": "https://github.com/brickgale/simple-react-checkout#readme",
-  "devDependencies": {
-    "css-loader": "^0.26.1",
-    "node-sass": "^3.13.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1"
-  }
+  "homepage": "https://github.com/brickgale/simple-react-checkout#readme"
 }

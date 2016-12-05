@@ -2,9 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
-import Layout from "./components/Layout";
-
-require('./app.scss');
+import Layout from "./js/components/Layout";
 
 const app = document.getElementById('app');
 
