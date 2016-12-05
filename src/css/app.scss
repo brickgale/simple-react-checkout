@@ -1,5 +1,66 @@
 body {
-	.logo {
-		border: 1px solid black;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+
+	nav {
+		&.topmenu.fixed {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 888;
+			min-height: 60px;
+			max-height: 60px;
+
+			h1.logo {
+				margin: 0px;
+				@media screen and (max-width: 700px) {
+					display: none;
+				}
+			}
+
+			.logo-icon.simple {
+				display: none;
+				@media screen and (max-width: 700px) {
+					display: block;
+				}
+			}
+
+			h1.logo, .logo-icon.simple {
+				position: absolute;
+				top: 0;
+				left: 0;
+				text-align: left;
+				margin: 0;
+			}
+
+
+			.nav-con {
+				margin: 0 auto;
+				text-align: center;
+				display: block;
+				padding: 12px  10px 12px 54px;
+
+				input.search-query {
+					width: 250px;
+					max-width: 100%;
+				}
+
+				.search-input-con {
+					position: relative;
+					display: inline;
+					.btn {
+						position: absolute;
+						right: 0;
+						padding: 6px 10px;
+					}
+				}
+			}
+		}
+	}
+
+	input {
+		padding: 6px 12px;
 	}
 }
