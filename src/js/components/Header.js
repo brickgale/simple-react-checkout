@@ -9,10 +9,10 @@ export default class Header extends React.Component {
 		return (
 			<nav class="topmenu fixed">
 				<Logo />
-				<div class="nav-con col-xs-9 col-md-8">
+				<div class="nav-con col-xs-10 col-md-8">
 					<Search />
 				</div>
-				<div class="checkout-btn col-xs-3 col-md-4">
+				<div class="checkout-btn col-xs-2 col-md-4">
 					<a class="btn btn-success pull-right checkout" href="#">
 						<i class="icon-shopping-cart"></i>
 						<span>

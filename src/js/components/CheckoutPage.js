@@ -2,6 +2,7 @@ import React from "react";
 import { Links } from "react-router";
 
 import Header from "./Header";
+import UserDetailsForm from "./UserDetailsForm";
 
 export default class CheckoutPage extends React.Component {
 	render() {
@@ -36,14 +37,21 @@ export default class CheckoutPage extends React.Component {
 						<label class="disable"><input type="radio" name="i-payment-method" disabled="" />Visa eller MasterCard (0kr)</label><br/>
 						<label class="disable"><input type="radio" name="i-payment-method" disabled="" />Via bank (0kr)</label><br/>
 					</div>
-					<div class="c-container">
+					<div class="c-container s-user-details">
 						<h3 class="c-title">
 							Ange dina uppgifter
 						</h3>
 						<div class="inline-radio">
-							<label><input type="radio" checked="checked" />Privatperson/Enskild firma</label>
-							<label><input type="radio" />Företag</label>
+							<label><input type="radio" name="i-user-details" />Privatperson/Enskild firma</label>
+							<label><input type="radio" name="i-user-details" />Företag</label>
 						</div>
+
+						<UserDetailsForm />
+					</div>
+
+					<p class="checkout-confirm text-center"><label><input id="c-confirm" type="checkbox" />Jag accepterar CarService Corp's <a href="#">köpvilkor</a></label></p>
+					<div class="text-center">
+						<a class="btn btn-large btn-success btn-confirm-checkout">Skicka beställning</a>
 					</div>
 				</div>
 			</div>
