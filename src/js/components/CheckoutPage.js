@@ -12,7 +12,7 @@ export default class CheckoutPage extends React.Component {
 				<div class="main-container checkout-container">
 					<div class="c-container cart-container">
 						<h3 class="c-title">
-							1. Granska din kundvagn (Måste hämtas i butik)
+							Granska din kundvagn (Måste hämtas i butik)
 						</h3>
 						<p>
 							Din kundvagn innehåller antingen reservdelar eller produkter som vi klassar som farliga,skrymmande eller ömtåliga. Din beställning måste därför hämtas ut i någon av våra butiker.
