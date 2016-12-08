@@ -3,6 +3,7 @@ import { Links } from "react-router";
 
 import Header from "./Header";
 import UserDetailsForm from "./UserDetailsForm";
+import DetailedCart from "./DetailedCart";
 
 export default class CheckoutPage extends React.Component {
 	render() {
@@ -17,6 +18,7 @@ export default class CheckoutPage extends React.Component {
 						<p>
 							Din kundvagn innehåller antingen reservdelar eller produkter som vi klassar som farliga,skrymmande eller ömtåliga. Din beställning måste därför hämtas ut i någon av våra butiker.
 						</p>
+						<DetailedCart />
 					</div>
 					<div class="c-container s-delivery">
 						<h3 class="c-title">
