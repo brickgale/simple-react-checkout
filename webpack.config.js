@@ -17,10 +17,14 @@ module.exports = {
 					plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
 				}
 			},
-            {
-                test: /\.scss$/,	
-                loaders: ["style", "css", "sass"]
-            }
+			{
+				test: /\.scss$/,	
+				loaders: ["style", "css", "sass"]
+			},
+			{
+				test: /\.json$/,	
+				loader: 'json-loader'
+			}
 		]
 	},
 	output: {
@@ -31,5 +35,11 @@ module.exports = {
 		new webpack.optimize.DedupePlugin(),
 		new webpack.optimize.OccurenceOrderPlugin(),
 		new webpack.optimize,UglifyJsPlugin({ mangle: false, sourcemap: false}),
-	]
+	],
+	node: {			
+		console: true,
+		fs: 'empty',
+		net: 'empty',
+		tls: 'empty'
+	}
 };
